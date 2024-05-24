@@ -25,7 +25,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# Ignore all .env files
+.env
+
+# Ignore .env files with .local suffix
 .env*.local
 
 # vercel
