@@ -6,27 +6,27 @@ import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyV
 const rows = [
   {
     key: "1",
-    name: "Tony Reichert",
-    role: "CEO",
-    status: "Active",
+    name: "Vealpal",
+    role: "Tank",
+    status: "Timed",
   },
   {
     key: "2",
-    name: "Zoey Lang",
-    role: "Technical Lead",
-    status: "Paused",
+    name: "Vealeriadru",
+    role: "DPS",
+    status: "Untimed",
   },
   {
     key: "3",
-    name: "Jane Fisher",
-    role: "Senior Developer",
-    status: "Active",
+    name: "Vealeriaw",
+    role: "DPS",
+    status: "Timed",
   },
   {
     key: "4",
-    name: "William Howard",
-    role: "Community Manager",
-    status: "Vacation",
+    name: "Vealeria",
+    role: "DPS",
+    status: "Untimed",
   },
 ];
 
@@ -41,7 +41,7 @@ const columns = [
   },
   {
     key: "status",
-    label: "STATUS",
+    label: "Completion",
   },
 ];
 
