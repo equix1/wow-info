@@ -3,6 +3,7 @@
 import React from "react";
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, getKeyValue} from "@nextui-org/react";
 
+// TODO : Add database information instead of static - Temporary
 const rows = [
   {
     key: "1",
@@ -13,18 +14,6 @@ const rows = [
   {
     key: "2",
     name: "Vealeriadru",
-    role: "DPS",
-    status: "Untimed",
-  },
-  {
-    key: "3",
-    name: "Vealeriaw",
-    role: "DPS",
-    status: "Timed",
-  },
-  {
-    key: "4",
-    name: "Vealeria",
     role: "DPS",
     status: "Untimed",
   },
