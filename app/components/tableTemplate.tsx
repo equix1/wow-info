@@ -9,13 +9,13 @@ const rows = [
     key: "1",
     name: "Vealpal",
     role: "Tank",
-    status: "Timed",
+    completion: "Timed",
   },
   {
     key: "2",
     name: "Vealeriadru",
     role: "DPS",
-    status: "Untimed",
+    completion: "Untimed",
   },
 ];
 
@@ -29,8 +29,8 @@ const columns = [
     label: "ROLE",
   },
   {
-    key: "status",
-    label: "Completion",
+    key: "completion",
+    label: "COMPLETION",
   },
 ];
 
