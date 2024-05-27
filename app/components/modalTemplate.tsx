@@ -16,16 +16,18 @@ export default function ModalTemplate({ btnTitle, btnBody }: ModalProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const size = "5xl";
 
-  const sectionTitle = <h2 className="mb-3 text-2xl font-semibold">{btnTitle}</h2>;
+  const sectionTitle = <span className="text-2xl font-semibold">{btnTitle}</span>;
 
   return (
     <>
       <Button
         onClick={() => onOpen()}
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        variant="light"
+        size="lg"
+        className="flex flex-col items-center text-center h-full whitespace-normal px-5 py-4"
       >
         {sectionTitle}
-        <p className="m-0 max-w-[30ch] text-sm opacity-50">{btnBody}</p>
+        <p className="max-w-[30ch] text-sm opacity-50">{btnBody}</p>
       </Button>
       <Modal
         className="flex inset-0 w-[60%] bg-black m-8"
@@ -33,7 +35,6 @@ export default function ModalTemplate({ btnTitle, btnBody }: ModalProps) {
         isOpen={isOpen}
         onClose={onClose}
       >
-        {/* TODO: Move "X" button to the top right of the modal */}
         <ModalContent>
             <>
               <ModalHeader className="flex flex-col items-center justify-center gap-1 rounded-lg">
