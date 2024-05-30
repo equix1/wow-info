@@ -1,4 +1,4 @@
 export default interface ModalProps {
-    btnTitle: string,
+    btnName: string,
     btnBody: string,
 }
