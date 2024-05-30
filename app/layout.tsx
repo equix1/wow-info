@@ -18,7 +18,11 @@ export default function RootLayout({
   return (
       <html lang="en" className="dark">    
         <body className={inter.className}>
-           <Providers>{children}</Providers>
+          <Providers>
+            {/* TODO: Header (Season end date) */}
+            {children}
+            {/* TODO: Footer */}
+          </Providers>
         </body>
       </html>
   );

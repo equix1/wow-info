@@ -1,19 +1,18 @@
 import Image from "next/image";
-import ModalTemplate from "./components/modalTemplate";
-import {Divider} from "@nextui-org/react";
+import ModalBase from "./components/modal";
 
 export default function Home() {
   // TODO : Move these to a different file - Temporary
-  const btnTitleRaidRanking = "Raid Ranking";
+  const btnNameRaidRanking = "Raid Ranking";
   const btnBodyRaidRanking = "What would your rank  be if you killed the boss right now?";
 
-  const btnTitleMythicTitle = "Mythic+ Title";
+  const btnNameMythicTitle = "Mythic+ Title";
   const btnBodyMythicTitle = "Push yourself to the max and reach the top 1%!";
 
-  const btnTitleHighestRating = "Highest IO";
+  const btnNameHighestRating = "Highest IO";
   const btnBodyHighestRating = "Who are the best Mythic+ players?";
 
-  const btnTitleHighestKey = "Best Timed Keys";
+  const btnNameHighestKey = "Best Timed Keys";
   const btnBodyHighestKey = "Find out the current highest timed key.";
 
   return (
@@ -35,10 +34,10 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <ModalTemplate btnTitle={btnTitleRaidRanking} btnBody={btnBodyRaidRanking}/>
-        <ModalTemplate btnTitle={btnTitleMythicTitle} btnBody={btnBodyMythicTitle}/>
-        <ModalTemplate btnTitle={btnTitleHighestRating} btnBody={btnBodyHighestRating}/>
-        <ModalTemplate btnTitle={btnTitleHighestKey} btnBody={btnBodyHighestKey}/>
+        <ModalBase btnName={btnNameRaidRanking} btnBody={btnBodyRaidRanking}/>
+        <ModalBase btnName={btnNameMythicTitle} btnBody={btnBodyMythicTitle}/>
+        <ModalBase btnName={btnNameHighestRating} btnBody={btnBodyHighestRating}/>
+        <ModalBase btnName={btnNameHighestKey} btnBody={btnBodyHighestKey}/>
       </div>
     </main>
   );
