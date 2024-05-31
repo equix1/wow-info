@@ -20,6 +20,7 @@ export default function ModalBase({ btnName, btnBody }: ModalProps) {
 
   const sectionName = <span className="text-2xl font-semibold">{btnName}</span>;
 
+  // TODO : Find a cleaner way to do this using the button onClick instead of static string in case
   const componentToRender = () => {
     switch(btnName) {
       case "Raid Ranking"   : return <RaidRanking />;
@@ -36,27 +37,24 @@ export default function ModalBase({ btnName, btnBody }: ModalProps) {
         variant="light" // Makes the button have no background
         size="lg"
         className="flex flex-col h-full whitespace-normal px-5 py-4"
-
       >
         {sectionName}
         <p className="text-sm opacity-50">{btnBody}</p>
       </Button>
       <Modal
-        className="bg-black p-5"
+        className="bg-black p-5 h-[70%] border border-blue-800"
         placement="center"
         size="5xl"
         isOpen={isOpen}
         onClose={onClose}
       >
         <ModalContent>
-            <>
-              <ModalHeader className="justify-center gap-1 rounded-lg">
-              {sectionName}
-              </ModalHeader>
-              <ModalBody>
-                { componentToRender() }
-              </ModalBody>
-            </>
+          <ModalHeader className="justify-center underline">
+            {sectionName}
+          </ModalHeader>
+          <ModalBody>
+            { componentToRender() }
+          </ModalBody>
         </ModalContent>
       </Modal>
     </>
