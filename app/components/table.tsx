@@ -10,7 +10,12 @@ import {
 } from "@nextui-org/react";
 import TableProps from "../interface/table"
 
+// TODO: Add Async to the function when fecthing real data
+// export default async function TableBase() {
 export default function TableBase({ rows, columns }: TableProps) {
+  
+  // TODO: Fetch data and remove the rows and columns props
+
   return (
     <Table>
       <TableHeader columns={columns}>

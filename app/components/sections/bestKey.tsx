@@ -1,13 +1,6 @@
-import React from "react";
-import {
-  Table,
-  TableHeader,
-  TableColumn,
-  TableBody,
-  TableRow,
-  TableCell,
-  getKeyValue,
-} from "@nextui-org/react";
+import React, { Suspense } from "react";
+import { Spinner } from "@nextui-org/react";
+import TableBase from "../table";
 
 // TODO : Add database information instead of static - Temporary
 const rows = [
@@ -41,21 +34,14 @@ const columns = [
 ];
 
 export default function BestKey() {
-  // use "section" in switch case to show different information for each modal
   return (
-    <Table>
-      <TableHeader columns={columns}>
-        {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
-      </TableHeader>
-      <TableBody items={rows}>
-        {(item) => (
-          <TableRow key={item.key}>
-            {(columnKey) => (
-              <TableCell>{getKeyValue(item, columnKey)}</TableCell>
-            )}
-          </TableRow>
-        )}
-      </TableBody>
-    </Table>
+    // TODO: Add a Tab for every key
+
+    // TODO: Add Suspense back when rows and columns are from a database
+    // <Suspense 
+    //   fallback={<Spinner label="Loading..." color="warning" />}
+    // >
+      <TableBase rows={rows} columns={columns}/>
+    // </Suspense>
   );
 }

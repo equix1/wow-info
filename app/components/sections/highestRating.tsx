@@ -1,13 +1,5 @@
-import React from "react";
-import {
-  Table,
-  TableHeader,
-  TableColumn,
-  TableBody,
-  TableRow,
-  TableCell,
-  getKeyValue,
-} from "@nextui-org/react";
+import React, { Suspense } from "react";
+import { Spinner } from "@nextui-org/react";
 import TableBase from "../table";
 
 // TODO : Add database information instead of static - Temporary
@@ -43,6 +35,13 @@ const columns = [
 
 export default function HighestRating() {
   return (
-    <TableBase rows={rows} columns={columns}/>
+    // TODO: Add a Tab for every role(?)/class(?)/specs(?)
+
+    // TODO: Add Suspense back when rows and columns are from a database
+    // <Suspense 
+    //   fallback={<Spinner label="Loading..." color="warning" />}
+    // >
+      <TableBase rows={rows} columns={columns}/>
+    // </Suspense>
   );
 }
