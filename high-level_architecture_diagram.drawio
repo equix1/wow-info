@@ -1,9 +1,51 @@
-<mxfile host="app.diagrams.net" modified="2024-06-04T19:07:38.935Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.4.13" etag="gceChmQ13u6ZzwIEHpWl" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-04T19:19:01.236Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="hGpVgAcHB4lx2T1WAHk8" version="24.4.13" type="github">
   <diagram name="Page-1" id="6ngqQFJhArMmjrOClJZY">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.85;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="6mm7rx3o7jv5DAFTDXSN-3" target="6mm7rx3o7jv5DAFTDXSN-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-3" value="PostgreSQL&amp;nbsp;&lt;br&gt;Database" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="335" y="260" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-4" value="Next.js - Frontend" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="260" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-5" value="Prisma ORM" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-9" value="Node.js Express - Middleware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="6mm7rx3o7jv5DAFTDXSN-10" target="6mm7rx3o7jv5DAFTDXSN-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-10" value="Blizzard API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="255" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="6mm7rx3o7jv5DAFTDXSN-11" target="6mm7rx3o7jv5DAFTDXSN-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-11" value="WarcraftLogs API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="315" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="6mm7rx3o7jv5DAFTDXSN-9" target="6mm7rx3o7jv5DAFTDXSN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-15" value="The Middleware will fetch, compare and update the database &lt;br&gt;if necessary every X amount of time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="190" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-16" value="The Frontend will only fetch data, &lt;br&gt;it will never update the Database" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mm7rx3o7jv5DAFTDXSN-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="6mm7rx3o7jv5DAFTDXSN-5" target="6mm7rx3o7jv5DAFTDXSN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
