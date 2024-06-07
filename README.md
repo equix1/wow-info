@@ -7,7 +7,7 @@ The idea is to be a mix of [raider.io](https://raider.io/) and [mplus-title.verc
 # Architecture
 
 ## High Level Diagram
-![High Level Architecture](https://github.com/equix1/wow-info/blob/master/assets/high-level-architecture.drawio.png)
+![High Level Architecture]([https://github.com/equix1/wow-info/blob/master/assets/high-level-architecture.drawio.png](https://github.com/equix1/wow-info/blob/master/assets/diagrams-High%20Level%20Architecture.drawio.png))
 
 ## Entities Relationship Diagram
-![Entities Relatinoship](https://github.com/equix1/wow-info/blob/master/assets/entities-relationship.drawio.png)
+![Entities Relatinoship](https://github.com/equix1/wow-info/blob/master/assets/diagrams-Entities%20Relationship.drawio.png)
