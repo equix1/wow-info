@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T18:08:21.967Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="2yQ4MDy6uRHd0FO3FU2H" version="24.4.13" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-06-07T18:09:19.248Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="D3OaugrvCX6fgny7GWRc" version="24.4.13" type="github" pages="2">
   <diagram name="High Level Architecture" id="6ngqQFJhArMmjrOClJZY">
     <mxGraphModel dx="1195" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,7 +60,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="KHD2d74SR9Xxo8bXHOB-" name="Entities Relationship">
-    <mxGraphModel dx="3457" dy="1356" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3056" dy="1148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -666,8 +666,8 @@
         <mxCell id="yZ9P-8CC4t-fDjAqAFsA-53" value="Data from Raider.IO API:&lt;br&gt;https://raider.io/api/v1/mythic-plus/season-cutoffs?region={region}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="310" y="1000" width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="yZ9P-8CC4t-fDjAqAFsA-54" value="Data from WarcraftLogs API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="170" y="240" width="170" height="30" as="geometry" />
+        <mxCell id="yZ9P-8CC4t-fDjAqAFsA-54" value="Data from WarcraftLogs API (GraphQL)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="yZ9P-8CC4t-fDjAqAFsA-55" value="Data from Raider.IO API:&lt;div&gt;https://raider.io/api/v1/mythic-plus/runs?season=season-df-4&amp;amp;region=world&amp;amp;dungeon={all or dungeon slug}&amp;amp;page=0&lt;br&gt;&lt;/div&gt;&lt;div&gt;https://raider.io/api/v1/mythic-plus/static-data?expansion_id=9&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="90" y="830" width="640" height="60" as="geometry" />
