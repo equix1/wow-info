@@ -1,13 +1,7 @@
 # WoW Info
 
-The goal of this project is to have all kinds of information in 1 place using 3 World of Warcraft API's (Battle.net, Raider.IO and WarcraftLogs).
+The goal of this project is to have all kinds of leaderboard information in 1 place using 3 World of Warcraft API's (Battle.net, Raider.IO and WarcraftLogs).
 
-The idea is to be a mix of [raider.io](https://raider.io/) and [mplus-title.vercel.app](https://mplus-title.vercel.app/df-season-3?regions=us)
+The idea is to be a mix of [Warcraft Logs](https://www.warcraftlogs.com/), [Raider.io](https://raider.io/) and [mplus-title.vercel.app](https://mplus-title.vercel.app/df-season-3?regions=us)
 
-# Architecture
-
-## High Level Diagram
-![High Level Architecture](https://github.com/equix1/wow-info/blob/master/assets/diagrams-high-level-architecture.drawio.png)
-
-## Entities Relationship Diagram
-![Entities Relatinoship](https://github.com/equix1/wow-info/blob/master/assets/diagrams-entities-relationship.drawio.png)
+[Backend github repo](https://github.com/equix1/wow-info-backend)
