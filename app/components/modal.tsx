@@ -39,7 +39,7 @@ export default function ModalBase({ btnName, btnBody }: ModalProps) {
         className="flex flex-col h-full whitespace-normal px-5 py-4"
       >
         {sectionName}
-        <p className="text-sm opacity-50">{btnBody}</p>
+        <p className="text-xs opacity-50 sm:text-sm">{btnBody}</p>
       </Button>
       <Modal
         className="bg-black p-5 h-[70%] border border-blue-800"
