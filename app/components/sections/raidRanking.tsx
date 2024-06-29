@@ -1,56 +1,69 @@
 import { Card, CardBody, Divider, Tab, Tabs } from "@nextui-org/react";
 import React from "react";
+import { TabsRaidRanking } from "../tabs";
 
 export default function RaidRanking() {
 
   // TODO : Add database information instead of static - Temporary
-  const tabs = [
+  const raids = [
     {
-      id: "voti",
-      label: "Vault of the Incarnate",
-      content: [
+      id: 1,
+      slug: "voti",
+      name: "Vault of the Incarnate",
+      bosses: [
         {
-          boss: "Eranog",
+          id: 1,
+          name: "Eranog",
           rank: 470,
         },
         {
-          boss: "Terros",
+          id: 2,
+          name: "Terros",
           rank: 360,
         },
         {
-          boss: "Eranog",
-          rank: 470,
+          id: 3,
+          name: "Primal Council",
+          rank: 390,
         },
         {
-          boss: "Terros",
-          rank: 360,
+          id: 4,
+          name: "Dathea",
+          rank: 270,
         },
+        
       ]
     },
     {
-      id: "abbe",
-      label: "Abberus",
-      content: [
+      id: 2,
+      slug: "abbe",
+      name: "Abberus",
+      bosses: [
         {
-          boss: "Kazara",
+          id: 1,
+          name: "Kazara",
           rank: 490,
         },
         {
-          boss: "Assault of Zaqali",
+          id: 2,
+          name: "Assault of Zaqali",
           rank: 240,
         },
       ]
     },
     {
-      id: "amir",
-      label: "Amirdrassil",
-      content: [
+      id: 3,
+      slug: "amir",
+      name: "Amirdrassil",
+      bosses: [
         {
-          boss: "Gnarlroot",
+          id: 1,
+          name: "Gnarlroot",
           rank: 390,
         },
         {
-          boss: "Igira",
+          id: 2,
+          name: "Igira",
           rank: 100,
         },
       ]
@@ -58,28 +71,6 @@ export default function RaidRanking() {
   ];
 
   return (
-    <Tabs aria-label="Dynamic tabs" variant="underlined" items={tabs} className="flex w-full flex-col">
-      {(item) => (
-        <Tab 
-          key={item.id} 
-          className="bg-cover bg-center py-6"
-          title={item.label}
-          style={{ backgroundImage: `url('../../favicon.ico')` }} // TODO: Add img of the raid
-        >
-          <Card>
-            <CardBody>
-              {item?.content?.map((content, index) => (
-                  <div key={index} className="grid mt-2">
-                    {/* TODO: Add img of the boss */}
-                    <span>Boss: {content.boss}</span>
-                    <span>Rank: {content.rank}</span>
-                    <Divider className="my-3" />
-                  </div>
-              ))}
-            </CardBody>
-          </Card>  
-        </Tab>
-      )}
-    </Tabs>
+    <TabsRaidRanking raids={raids} />
   );
 }
